@@ -8,7 +8,7 @@ import { BadRequestException } from '@nestjs/common';
 import { BorrowRecord } from './entities/borrowRecord.entity';
 
 @Injectable()
-export class BooksService {
+export class BooksService { 
   constructor(
     @InjectRepository(Book)
     private readonly bookRepository: Repository<Book>,
