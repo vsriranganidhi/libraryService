@@ -18,7 +18,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         type: 'postgres',
         url: process.env.DATABASE_URL,
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
-        synchronize: false, // As we discussed, keep this false for safety!
+        synchronize: true, 
       }),
     }),
     BooksModule,
